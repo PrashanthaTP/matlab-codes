@@ -4,7 +4,7 @@ close all;
 clear all;
 
 f1 = input('frequency f1 :');
-f2 = input('frequency f1 :');
+f2 = input('frequency f2 :');
 fc1 = input('Lower Cutoff frequency fc1 :');
 fc2 = input('Upper Cutoff frequency fc2 :');
 N = input('Order of the Filter :');
