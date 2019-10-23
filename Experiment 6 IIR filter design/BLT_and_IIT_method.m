@@ -1,4 +1,4 @@
-% LPF IIR
+% LPF USING  IIR / BLT METHODS
 clc;
 close all;
 clear all;
@@ -81,7 +81,7 @@ elseif s2z ==2
      [b,a] = bilinear(numt,dent,fs);
      [b1,a1] = bilinear(b_num,a_num,fs);
 else
-    dip('Error');
+    disp('Error');
 end
 disp(['Numerator of H(z):' num2str(b)]);
 disp(['Denominator of H(z):' num2str(a)]);
