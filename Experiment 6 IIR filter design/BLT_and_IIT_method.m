@@ -4,7 +4,7 @@ close all;
 clear all;
 s2z = input('1 : Impulse invariance Transformation | 2: Bilinear Transformation\n');
 if(isempty(s2z))
-    str = 1;
+    s2z = 1;
 end
 As_que = input('Stop band attenuation :');
 Ap_que = input('Passband band attenuation :');
