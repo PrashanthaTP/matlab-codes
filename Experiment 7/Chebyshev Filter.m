@@ -5,7 +5,7 @@ close all;
 choice = input('Enter your choice\n1:IIT \n2:BLT \n');
 
 if(isempty(choice))
-    str = 1;
+    choice = 1;
 end
 
 As_dB = 20; Ap_dB = 1; ws1 =0.45*pi; wps = 0.15*pi; fs = 1;
