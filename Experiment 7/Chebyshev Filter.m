@@ -8,7 +8,7 @@ if(isempty(choice))
     choice = 1;
 end
 
-As_dB = 20; Ap_dB = 1; ws1 =0.45*pi; wps = 0.15*pi; fs = 1;
+As_dB = 20; Ap_dB = 1; ws1 =0.45*pi; wp1 = 0.15*pi; fs = 1;
 x = 10^(0.1*As_dB);         % 1/As^2
 y = 10^(0.1*Ap_dB);         %1/Ap^2
 
