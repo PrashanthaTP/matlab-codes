@@ -8,7 +8,14 @@ if(isempty(choice))
     choice = 1;
 end
 
-As_dB = 20; Ap_dB = 1; ws1 =0.45*pi; wp1 = 0.15*pi; fs = 1;
+Ap_dB = input('Enter the value of Passband Attenuation in dB :');
+As_dB = input('Enter the value of Stopband Attenuation in dB :');
+ws1 = input('Stop band frequency :');
+wp1 = input('Passband frequency :');
+fs = input('sampling frequency :');
+
+% As_dB = 20; Ap_dB = 1; ws1 =0.45*pi; wp1 = 0.15*pi; fs = 1;
+
 x = 10^(0.1*As_dB);         % 1/As^2
 y = 10^(0.1*Ap_dB);         %1/Ap^2
 
@@ -37,7 +44,7 @@ disp(['Order from equation N = ' num2str(ceil(N_num))]);
 N_builtin = cheb1ord(wp,ws,Ap_dB,As_dB,'s');
 disp(['Order from builtin function: ' num2str(N_builtin)]);
 
-[b_num, a_num] =cheby1(N_builtin,Ap_dB,wp1,'low','s');
+[b_num, a_num] =cheby1(N_builtin,Ap_dB,wp,'low','s');  %Corresponding to analog domain specs
 
 
 if choice ==1
