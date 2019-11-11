@@ -1,0 +1,22 @@
+clc;
+close all;
+clear all;
+fm = 10;
+fs = 140;
+t = 0:1/fs:0.57;
+N = length(t);
+x = sin(2*pi*fm*t);
+% decimation of input sequence
+L = 2;
+xd = interp(x,L);
+figure(1);
+subplot(2,1,1);
+stem(x);
+xlabel('No. of samples');
+ylabel('Amplitude');
+title('input discrete sinusoidal sequence');
+subplot(2,1,2);
+stem(xd);
+xlabel('No. of samples');
+ylabel('Amplitude');
+title('Interpolated Sinusoidal Sequence');
