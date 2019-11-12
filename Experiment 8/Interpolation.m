@@ -6,7 +6,7 @@ fs = 140;
 t = 0:1/fs:0.57;
 N = length(t);
 x = sin(2*pi*fm*t);
-% decimation of input sequence
+% interpolation of input sequence
 L = 2;
 xd = interp(x,L);
 figure(1);
