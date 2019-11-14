@@ -1,2 +1,2 @@
-# DSP-EC540-lab-codes
+# DSP EC540 lab codes
 EC540  matalab codes
